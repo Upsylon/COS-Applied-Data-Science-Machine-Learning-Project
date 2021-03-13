@@ -1,6 +1,9 @@
-# capstone-project-adsml19-c5-s2-2848-1467
+# :chess_pawn:  Capstone-project - Guess the Game!  :chess_pawn: 
+By Grandadam Patrik
 
-## Introduction <a class="anchor" id="Intro"></a>
+![Board](Images/Chessboard.png)
+
+## Introduction
 
 The picture above illustrates a chessboard after white's first move "e2-e4". However, it is not possible to affirm that the game played is "standard chess".  
 Indeed, multiple chess "variants" exist. A variant could be defined as a game that a played on a chess board and which rules are inspired by chess, but that differs from it in some ways. 
@@ -10,7 +13,7 @@ Examples of the different variants can be found under https://lichess.org/varian
 
 The project will be focus on the 9 variants that can be played on lichess.org. 
 
-## Methdology <a class="anchor" id="Method"></a>
+## Methdology
 
 ### Data Extraction and processing
 
@@ -40,7 +43,7 @@ This analysis helped to distinguish variants that would be easy to predict as mu
 On the other side, other variants seemed much more challenging to predict Even if some features have proven to vary between the remaining variants, no clear pattern could be distinguished.  
 Based on the output of the EDA, we create 
 
-## Modelling <a class="anchor" id="Models"></a>
+## Modelling
 
 Multiple strategies are tested to predict the variant of a given game. After having split the data into training and testing set, we use a grid-search cross-validation to tuned hyperparameters in a training step and predict the variants of unseen data in the testing set. The following models are considered : Decision Tree, Logistic Regression, SVM, Random Forest, Neural Networks. These models are applied to muliple datasets and using different strategies summarized below:  
 - Tuning the models on only engineered features, predicting the variant of the testing set and evaluating the accuracy  
@@ -54,8 +57,7 @@ Multiple strategies are tested to predict the variant of a given game. After hav
 
 While the overall objective is to maximise the likelihood of predicting correctly a given game (i.e. the main criterion is the accuracy), other criterion such as the computation time, the overall F1, precision and recall are also monitored. The notion of trade-off between the accuracy and the computational complexity will play an important role in the analysis and might be a criterion of decision. 
 
-## Results <a class="anchor" id="Results"></a>
-
+## Results
 We come up with two models that overperform and that should be considered:
 - SVM model applied on the whole dataset that has the best accuracy (> 88%) and also performs best for the other criterion but that is quite complex  
 - SVM using first a PCA with 89 components that has a very good accuracy as well and which training time is clearly lower
