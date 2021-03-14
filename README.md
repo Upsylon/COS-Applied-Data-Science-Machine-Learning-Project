@@ -9,7 +9,7 @@ The picture above illustrates a chessboard after white's first move "e2-e4". How
 Indeed, multiple chess "variants" exist. A variant could be defined as a game that a played on a chess board and which rules are inspired by chess, but that differs from it in some ways. 
 Examples of the different variants can be found under https://lichess.org/variant.  
 
-**The goal of this project is to predict the variant that is played on a given chess board.**  
+**The goal of this project is to predict the variant that is played on a given chess board after 10 moves.**  
 
 The project will be focus on the 9 variants that can be played on lichess.org. 
 
@@ -26,7 +26,7 @@ The data is then cleaned and processed through the following steps:
 - encoding to convert each of the 64 squares into binary variables that will be used later in the different models  
 
 The output of this preprocessing steps is a clean dataframe of 1000 observations from each variant (=9000 observations in total). 
-The main information contained in this dataframe is the variant played on a given board and multiple encoded features derived from the position after N moves.   
+The main information contained in this dataframe is the variant played on a given board and multiple encoded features derived from the position after 10 moves.   
 
 ### Exploratory Data Analysis
 
