@@ -40,12 +40,14 @@ The results shown are the result of an iterative process:
 
 Through this process, it was quickly possible to discover features that discriminate the data well, like the total number of pieces (especially pawns and kings) on the board, the number of trades, the number of checks given or the positionning of certains pieces on key squares.  
 This analysis helped to distinguish variants that would be easy to predict as multiple features discriminated them well like racingKings, horde or to a lower extent antichess, atomic and chess960.  
-On the other side, other variants seemed much more challenging to predict Even if some features have proven to vary between the remaining variants, no clear pattern could be distinguished.  
-Based on the output of the EDA, we create 
+On the other side, other variants seemed much more challenging to predict. Even if some features have proven to vary between the remaining variants, no clear pattern could be distinguished.  
+Based on the output of the EDA, we create two dataframes:  
+- df_feat_eng that contains only engineered features  
+- full_df that contains all features (engineered features + features directly derived from the position = the position of the pieces)  
 
 ## Modelling
 
-Multiple strategies are tested to predict the variant of a given game. After having split the data into training and testing set, we use a grid-search cross-validation to tuned hyperparameters in a training step and predict the variants of unseen data in the testing set. The following models are considered : Decision Tree, Logistic Regression, SVM, Random Forest, Neural Networks. These models are applied to muliple datasets and using different strategies summarized below:  
+Multiple strategies are tested to predict the variant of a given game. After having split the data into training and testing set, we use a grid-search cross-validation to tuned hyperparameters in a training step and predict the variants of unseen data in the testing set. The following models are considered : Decision Tree, Logistic Regression, SVM, Random Forest, Neural Networks. These models are applied to the datasets  using different strategies summarized below:  
 - Tuning the models on only engineered features, predicting the variant of the testing set and evaluating the accuracy  
 - Tuning the models on the whole dataset and predicting the variant of the testing set and evaluating the accuracy  
 - Tuning the models using a nested strategy:  
