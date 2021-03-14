@@ -62,3 +62,16 @@ We come up with two models that overperform and that should be considered:
 - SVM model applied on the whole dataset that has the best accuracy (> 88%) and also performs best for the other criterion but that is quite complex  
 - SVM using first a PCA with 89 components that has a very good accuracy as well and which training time is clearly lower
 
+---
+# Structure of the repository
+
+**1. Capstone project - Data prep & EDA.ipynb (Must read**) --> Collecting, cleaning and preparing data ; EDA Analysis  
+**2. Capstone project - Modelling.ipynb (Must read**) --> Presentation of modelling strategy ; Modelling using a first approach  
+2.1 Capstone project - Eng.ipynb --> Modelling using an alternative approach (other dataframe)  
+**2.2 Capstone project - PCA.ipynb (Must read**) --> Modelling using PCA  
+2.3.0 Capstone project - Nested models.ipynb + copies --> Modelling using a nested strategy  
+2.3.X Capstone project - Nested models.ipynb + copies (*Optional*) --> Modelling using other nested strategy  
+2.4 Capstone project - NN.ipynb --> Modelling using a Neural Network with keras and using more samples  
+**3. Capstone project - Results.ipynb (Must read**) --> The results
+Big sample extraction.ipynb (*Optional*) --> The code to extract the samples for the NN with more features
+
