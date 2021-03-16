@@ -77,3 +77,4 @@ We come up with two models that overperform and that should be considered:
 **3. Capstone project - Results.ipynb (Must read**) --> The results  
 Big sample extraction.ipynb (*Optional*) --> The code to extract the samples for the NN with more features  
 
+A section *Summary of the methodology and outcomes* recaps the main outcomes at the beginning of each notebook.
