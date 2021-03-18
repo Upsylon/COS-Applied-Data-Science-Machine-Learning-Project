@@ -74,7 +74,8 @@ We come up with two models that overperform and that should be considered:
 2.3.0 Capstone project - Nested models.ipynb + copies --> Modelling using a nested strategy    
 2.3.X Capstone project - Nested models.ipynb + copies (*Optional*) --> Modelling using other nested strategy    
 2.4 Capstone project - NN.ipynb --> Modelling using a Neural Network with keras and using more samples  
+2.4.1 Big sample extraction.ipynb (*Optional*) --> The code to extract the samples for the NN with more features  
 **3. Capstone project - Results.ipynb (Must read**) --> The results  
-Big sample extraction.ipynb (*Optional*) --> The code to extract the samples for the NN with more features  
+
 
 A section *Summary of the methodology and outcomes* recaps the main outcomes at the beginning of each notebook.
