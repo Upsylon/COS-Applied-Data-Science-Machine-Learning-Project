@@ -6,7 +6,7 @@ By Grandadam Patrik
 ## Introduction
 
 The picture above illustrates a chessboard after white's first move "e2-e4". However, it is not possible to affirm that the game played is "standard chess".  
-Indeed, multiple chess "variants" exist. A variant could be defined as a game that a played on a chess board and which rules are inspired by chess, but that differs from it in some ways. 
+Indeed, multiple chess "variants" exist. A variant could be defined as a game that a played on a chess board and which rules are inspired by chess, but that differs from it in some ways.  
 Examples of the different variants can be found under https://lichess.org/variant.  
 
 **The goal of this project is to predict the variant that is played on a given chess board after 10 moves.**  
